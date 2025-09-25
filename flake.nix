@@ -26,7 +26,7 @@
         devShells.default =
           with pkgs;
           mkShell {
-            buildInputs = [
+            packages = with pkgs; [
               # WebAssembly
               wabt
               wasmtime
