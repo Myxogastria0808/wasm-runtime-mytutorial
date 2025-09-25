@@ -27,8 +27,9 @@
           with pkgs;
           mkShell {
             buildInputs = [
-              # for axum
-              openssl
+              # WebAssembly
+              wabt
+              wasmtime
               # background code checker
               pkg-config
               bacon
